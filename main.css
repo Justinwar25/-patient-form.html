@@ -1,0 +1,88 @@
+h1 {
+    color: rgb(1, 60, 255);
+    text-align: center;
+  }
+/* Above is to cetner the h1 so its in the middle of the screen */ 
+.address-container {
+    display: flex;
+    gap: 15px; 
+  }
+  
+.zip, .city, .state {
+    width: 30%; 
+    padding: 8px;
+  }
+/*This is so my city, zip, and state are all on the same row  */ 
+#demo {
+    text-align: right; 
+    position: absolute;
+    right: 10px; 
+    top: 20px; 
+}
+/*This is so the current date is displayed on the right side of the screen */ 
+.name-boxes {
+    display: flex;
+    gap: 15px; 
+  }
+  
+.name-container div {
+    flex: 1; 
+  }
+  
+.name-container input {
+    width: 100%; 
+    padding: 8px;
+  }
+/* This is also so my first, middle, and last name allign on the same row*/ 
+footer {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+/* This is for the footer alignment*/ 
+.slidecontainer {
+width: 50%;
+}
+
+.slider {
+-webkit-appearances: none;
+width: 100%;
+height: 25px;
+background: #f5f5f5;
+outline: none;
+opacity: 0.7;
+-webkit-transition: .2s;
+transition: opacity .2s;
+}
+
+.slider:hover {
+opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 25px;
+height: 25px;
+background: #ff1100;
+cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+width: 25px;
+height: 25px;
+background: #aa0f04;
+cursor: pointer;
+}
+.slider-labels {
+display: flex;
+justify-content: space-between;
+padding-top: 5px;
+}
+.slider-labels span {
+font-size: 14px;
+color: #333;
+}
+
+/* This is the slider and for me this took the longest to figure out how to actually add it in./ 

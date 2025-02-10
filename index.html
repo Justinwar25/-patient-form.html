@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<!--patient.form.html Justin Guerra first started working on this 2/6/2025, submitted 2/9/2025. 2.1. this is my attempt at making a form website that works-->
+<html lang="en">
+    <head>  
+        <meta charset="UTF-8">
+        <img src ="stethiscope.jpg" height="250" alt="This is a picture of a stethiscope" title="This is a stethiscope">
+        <title>JG Medical</title>
+        <link rel="stylesheet" href="css/main.css">
+        <!-- for the below date and time I had to figure out how to add it using w3 schools-->
+
+<p id="demo"></p>
+
+<script>
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+</script>
+
+        
+    </head>
+    <body style="background-color:powderblue;">
+
+        <h1>JG Medical Patient Registration Form</h1> 
+        <hr>
+        <form>
+            <div class="name-boxes">
+                <div>
+                    <label for="1stname">First name:</label> 
+                    <input type="text" id="1stname" name="1stname" placeholder="First Name Here" maxlength="30" required>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for="Minitial">Middle Initial:</label> 
+                    <input type="text" id="Minitial"  name="Minitial" placeholder="Middle Initial Here" maxlength="1" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="lastname">Last name:</label> 
+                    <input type="text" id="lastname" name="lastname" placeholder="Last Name Here" maxlength="30" required>
+                </div>
+            </div>
+                <br>
+
+                <div>
+                    <label for="DOB">Date of Birth:</label> 
+                    <input type="Date" id="DOB" name="DOB" placeholder="Date of Birth Here" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="SSCHERE">Social Security:</label> 
+                    <input type="password" id="SSCHERE" name="SSCHERE" placeholder="Social Security #" min="111111111" max="99999999999" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Adresslineone">Address line 1:</label> 
+                    <input type="text" id="Addresslineone" name="Addresslineone" placeholder="Address line 1 Here" maxlength="30" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Addresslinetwo">Address line 2:</label> 
+                    <input type="text" id="Addresslinetwo" name="Addresslinetwo" placeholder="Address line 2 Here" maxlength="30" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="phonenumber">Phone Number:</label> 
+                    <input type="tele" id="phonenumber" name="phonenumber" placeholder="(123-456-7890)" required>
+                </div>
+
+                <br>
+
+            <div class="address-container">
+                <div>
+                    <label for="inputcity">City:</label> 
+                    <input type="text" id="inputcity" name="inputcity" placeholder="Type in your city Here" maxlength="30" required>
+                </div>
+
+                <br>
+                <!-- this I found on the web for the options, saved me a lot of time-->
+                <div>
+                    <label for="State">State:</label>
+                    <select id="State" name="State">
+                        <option value="selected" >Select a State</option>
+                        <option value="AL">Alabama</option>
+                        <option value="AK">Alaska</option>
+                        <option value="AZ">Arizona</option>
+                        <option value="AR">Arkansas</option>
+                        <option value="CA">California</option>
+                        <option value="CO">Colorado</option>
+                        <option value="CT">Connecticut</option>
+                        <option value="DE">Delaware</option>
+                        <option value="DC">District Of Columbia</option>
+                        <option value="FL">Florida</option>
+                        <option value="GA">Georgia</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="ID">Idaho</option>
+                        <option value="IL">Illinois</option>
+                        <option value="IN">Indiana</option>
+                        <option value="IA">Iowa</option>
+                        <option value="KS">Kansas</option>
+                        <option value="KY">Kentucky</option>
+                        <option value="LA">Louisiana</option>
+                        <option value="ME">Maine</option>
+                        <option value="MD">Maryland</option>
+                        <option value="MA">Massachusetts</option>
+                        <option value="MI">Michigan</option>
+                        <option value="MN">Minnesota</option>
+                        <option value="MS">Mississippi</option>
+                        <option value="MO">Missouri</option>
+                        <option value="MT">Montana</option>
+                        <option value="NE">Nebraska</option>
+                        <option value="NV">Nevada</option>
+                        <option value="NH">New Hampshire</option>
+                        <option value="NJ">New Jersey</option>
+                        <option value="NM">New Mexico</option>
+                        <option value="NY">New York</option>
+                        <option value="NC">North Carolina</option>
+                        <option value="ND">North Dakota</option>
+                        <option value="OH">Ohio</option>
+                        <option value="OK">Oklahoma</option>
+                        <option value="OR">Oregon</option>
+                        <option value="PA">Pennsylvania</option>
+                        <option value="RI">Rhode Island</option>
+                        <option value="SC">South Carolina</option>
+                        <option value="SD">South Dakota</option>
+                        <option value="TN">Tennessee</option>
+                        <option value="TX">Texas</option>
+                        <option value="UT">Utah</option>
+                        <option value="VT">Vermont</option>
+                        <option value="VA">Virginia</option>
+                        <option value="WA">Washington</option>
+                        <option value="WV">West Virginia</option>
+                        <option value="WI">Wisconsin</option>
+                        <option value="WY">Wyoming</option>
+                    </select>   
+                </div>
+                <div>
+                    <label for="Zipcode">Zipcode:</label> 
+                    <input type="tel" id="Zipcode" name="Zipcode" placeholder="Zipcode Here" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" min="5" max="10" required>
+                </div>
+            </div>
+
+                <br>
+
+                <div>
+                    <label for="email">Email Address:</label> 
+                    <input type="email" id="email" name="email" placeholder="Email Address Here" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="USERID"><u>Desired UserID:</u></label> 
+                    <input type="text" id="USERID" name="USERID" placeholder="Enter a UserID Here" maxlength="20" required>
+                </div>
+                
+                <br>
+
+                <div>
+                    <label for="Pass"><u>Password:</u></label> 
+                    <input type="password" id="Pass" name="Pass" maxlength="20" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Pas"><u>Re-enter Password:</u></label> 
+                    <input type="password" id="Pas" name="Pas" maxlength="20" required>
+                </div>
+
+            <div class="slidecontainer">
+                        <p><u>How are you feeling on a scale of 1-10 <b>(1 being you feel horrible, 10 being you feel normal):</b></u></p>
+                        <input type="range" min="1" max="10" value="5" class="slider" id="myRange">
+                        <!-- These are so the patient can see where they are sliding to -->
+                        <div class="slider-labels">
+                            <span>1</span>
+                            <span>2</span>
+                            <span>3</span>
+                            <span>4</span>
+                            <span>5</span>
+                            <span>6</span>
+                            <span>7</span>
+                            <span>8</span>
+                            <span>9</span>
+                            <span>10</span>
+                    </div> <!-- Figured this out and was able to add a number slider to the slider-->
+            </div>
+                
+                <br>
+                <div>
+                <fieldset>
+                    <p><label for="Checkbox"><b>Checkmark your current symptoms:</b></label></p>
+                    <input type="checkbox" id="checkmark1" name="checkmark1" value="Abdominal pain">
+                    <label for="checkmark1"> Abdominal pain</label><br>
+                    <input type="checkbox" id="checkmark2" name="checkmark2" value="Chest pain">
+                    <label for="checkmark2"> Chest pain</label><br>
+                    <input type="checkbox" id="checkmark3" name="checkmark3" value="Cough">
+                    <label for="checkmark3"> Cough</label><br>
+                    <input type="checkbox" id="checkmark4" name="checkmark44" value="Fever">
+                    <label for="checkmark4"> Fever</label><br>
+                    <input type="checkbox" id="checkmark5" name="checkmark5" value="Nausea or vomiting">
+                    <label for="checkmark5"> Nausea and or Vomiting</label>
+                </fieldset>
+                </div>
+                <!-- the above fieldset was to have 5 different symptoms listed-->
+                <br>
+
+                <div>
+                <p><label for="About"><b>Describe any other symptoms not listed above:</b></label></p>
+                <textarea id="About" name="About" rows="5" cols="50">In this text box describe any other symptoms you are expereicing.</textarea>
+
+            </div>
+
+                <br>
+
+                <div>
+                    <label for="Vaccines"><b>Have you been vaccinated in the past year:</b></label>
+
+                    <label for="Yes">Yes</label> 
+                    <input type="radio" id="Yes" name="Vaccine" value="Vaccines">
+
+                    <label for="No">No</label> 
+                    <input type="radio" id="No" name="Vaccine" value="Vaccines">
+                    <!--The radio was a easier step to understand then everything else, I just copy and pasted the code to the others which made this proccess quick and simple-->
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Insurance"><b>Do you currently have insurance:</b></label>
+
+                    <label for="Yes">Yes</label> 
+                    <input type="radio" id="Yes" name="Insurance" value="Insurance">
+
+                    <label for="N">No</label> 
+                    <input type="radio" id="N" name="Insurance" value="Insurance">
+
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="title"><b>Gender:</b></label>
+
+                    <label for="Male">Male</label> 
+                    <input type="radio" id="Male" name="genders" value="1stmale">
+
+                    <label for="Female">Female</label> 
+                    <input type="radio" id="Female" name="genders" value="2ndfemale">
+
+                    <label for="Other">Other</label> 
+                    <input type="radio" id="Other" name="genders" value="3rdother">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="reset">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="Submit">
+                </div>
+
+                <hr>
+        </form>
+        <!-- This was one of the easier parts besides aligning everything which I did in css under the footer  -->
+                <div>
+                <footer>
+                    <p>JG Medical 2025</p>
+                    <a href="https://www.google.com/">
+                        <button>Contact Us Here</button>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <button>Facebook Page Here</button>
+                    </a>
+                    <p>Manvel Texas 77578</p> <p>POBOX 14666</p> 
+                </footer>
+                </div>
+    </body>
+</html>
